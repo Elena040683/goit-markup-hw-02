@@ -31,13 +31,14 @@ body {
 }
 
 .link.contacts {
-  color: #757575;
+  color: var(--accent-text-color);
 }
 
 .link.contacts:hover,
 .link.contacts:focus {
   color: var(--brand-color);
 }
+
 .footer {
   background-color: var(--accent-color);
 }
@@ -50,8 +51,6 @@ address {
 }
 
 .contacts-footer {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -68,31 +67,53 @@ address {
   color: #000000;
 }
 
-.logo:hover,
-.logo:focus {
+.web {
   color: var(--brand-color);
 }
 
-.web {
-  color: var(--brand-color);
+.studio {
+  color: var(--main-color);
 }
 
 .list {
   list-style: none;
 }
 
-.btn {
+.button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: var(--main-color);
   background-color: var(--brand-color);
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--accent-light-color);
+  cursor: pointer;
+}
+
 .btn:hover,
 .btn:focus {
-  color: var(--brand-color);
+  color: var(--main-color);
+  background-color: var(--brand-color);
 }
 
 .main-section {
@@ -115,7 +136,6 @@ address {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
 }
 .text {
   line-height: 1.71;
